@@ -5,6 +5,8 @@ using UnityEngine.Serialization;
 
 public class BoundsCheck : MonoBehaviour
 {
+    [Header("Set in Inspector")]
+    public Vector2 bounds;
     [Header("Set Dynamically")] 
     public float camWidth;
     public float camHeight;
@@ -24,24 +26,24 @@ public class BoundsCheck : MonoBehaviour
     void LateUpdate()
     {
         Vector3 pos = transform.position;
-        if (pos.x > camWidth)
+        if (pos.x + _box.bounds.extents.x > bounds.x)
         {
-            pos.x = camWidth;
+            pos.x = bounds.x - _box.bounds.extents.x;
         }
 
-        if (pos.x < -camWidth)
+        if (pos.x - _box.bounds.extents.x < -bounds.x)
         {
-            pos.x = -camWidth;
+            pos.x = -bounds.x + _box.bounds.extents.x;
         }
 
-        if (pos.y > camHeight)
+        if (pos.y + _box.bounds.extents.y > bounds.y)
         {
-            pos.y = camHeight;
+            pos.y = bounds.y - _box.bounds.extents.y;
         }
 
-        if (pos.y < -camHeight)
+        if (pos.y - _box.bounds.extents.y < -bounds.y)
         {
-            pos.y = -camHeight;
+            pos.y = -bounds.y + _box.bounds.extents.y;
         }
 
         transform.position = pos;
