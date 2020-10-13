@@ -9,7 +9,9 @@
         <e p="Scripts" t="Include">
           <e p="BoundsCheck.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
+          <e p="EnemySpawner.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Missile.cs" t="Include" />
           <e p="ParallaxScript.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="Singletone.cs" t="Include" />

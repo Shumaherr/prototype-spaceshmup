@@ -10,6 +10,13 @@ public class GameManager : Singleton<GameManager>
     public Vector2 StartPosition;
 
     private Transform _player;
+
+    public Transform Player
+    {
+        get => _player;
+        set => _player = value;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
