@@ -8,8 +8,9 @@ public class GameManager : Singleton<GameManager>
 {
     public Transform PlayerPrefab;
     public Vector2 StartPosition;
-
+    public GameObject explosionPrefab;
     private Transform _player;
+    private int _score;
 
     public Transform Player
     {
@@ -40,5 +41,10 @@ public class GameManager : Singleton<GameManager>
     void Update()
     {
         
+    }
+
+    public void AddScore(int i)
+    {
+        _score += i;
     }
 }

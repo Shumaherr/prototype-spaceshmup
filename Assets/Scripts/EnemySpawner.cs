@@ -9,7 +9,7 @@ public class EnemySpawner : Singleton<EnemySpawner>
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", 10, 30);
+        InvokeRepeating("SpawnEnemy", 0, 10);
     }
 
     // Update is called once per frame
@@ -29,4 +29,6 @@ public class EnemySpawner : Singleton<EnemySpawner>
         int side = Random.Range(0, 1);
         return new Vector3(side < 0.5 ? -40:40, Random.Range(0, 40), 0);
     }
+    
+    
 }

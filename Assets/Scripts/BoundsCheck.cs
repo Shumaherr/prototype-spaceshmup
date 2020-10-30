@@ -11,6 +11,14 @@ public class BoundsCheck : MonoBehaviour
     public float camWidth;
     public float camHeight;
     [FormerlySerializedAs("_camSize")] [Header("Set Dynamically")]
+    private bool _outOfScreen;
+
+    public bool OutOfScreen
+    {
+        get => _outOfScreen;
+        set => _outOfScreen = value;
+    }
+
     public Vector2 camSize;
 
     private BoxCollider _box;
@@ -29,27 +37,35 @@ public class BoundsCheck : MonoBehaviour
         if (pos.x + _box.bounds.extents.x > bounds.x)
         {
             pos.x = bounds.x - _box.bounds.extents.x;
+            _outOfScreen = true;
         }
 
         if (pos.x - _box.bounds.extents.x < -bounds.x)
         {
             pos.x = -bounds.x + _box.bounds.extents.x;
+            _outOfScreen = true;
         }
 
         if (pos.y + _box.bounds.extents.y > bounds.y)
         {
             pos.y = bounds.y - _box.bounds.extents.y;
+            _outOfScreen = true;
         }
 
         if (pos.y - _box.bounds.extents.y < -bounds.y)
         {
             pos.y = -bounds.y + _box.bounds.extents.y;
+            _outOfScreen = true;
         }
 
+        if (_outOfScreen && !gameObject.tag.Equals("Player"))
+        {
+            Destroy(gameObject);
+            return;
+        }
         transform.position = pos;
     }
-
-// Рисует границы в панели Scene (Сцена) с помощью OnDrawGizmos()
+    
     void OnDrawGizmos()
     {
         // е

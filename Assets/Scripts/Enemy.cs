@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.PlayerLoop;
+using Random = System.Random;
 
 public class Enemy : MonoBehaviour
 {
@@ -13,6 +14,13 @@ public class Enemy : MonoBehaviour
     public int scoreRevard = 100; //Score for destroy
     public Transform missile; //Missle to shoot
     private bool _cooldown;
+    private BoundsCheck _bounds;
+    private bool _moveToPos = true;
+
+    private void Start()
+    {
+        _bounds = GetComponent<BoundsCheck>();
+    }
 
     public Vector3 pos
     {
@@ -38,18 +46,47 @@ public class Enemy : MonoBehaviour
     {
         _cooldown = true;
         yield return new WaitForSeconds(fireRate);
-        Instantiate(missile, pos, Quaternion.identity);
+        Instantiate(missile, pos, missile.rotation);
         _cooldown = false;
     }
 
-    public void HandleMove()
+    private void HandleMove()
     {
+        Random r = new Random();
         Vector3 targetPos = GameManager.Instance.Player.position;
         Vector3 newPos = pos;
-        if(pos.x < targetPos.x)
-            newPos.x += speed * Time.deltaTime;
-        if(pos.x > targetPos.x)
-            newPos.x -= speed * Time.deltaTime;
+        float deltaTime = Time.deltaTime;
+        if (newPos.x < 0 + r.NextDouble() && _moveToPos)
+            newPos.x += speed * deltaTime;
+        else
+        {
+            _moveToPos = false;
+            if (pos.x < targetPos.x)
+                newPos.x += speed * deltaTime;
+            if (pos.x > targetPos.x)
+                newPos.x -= speed * deltaTime;
+            newPos.y -= speed * deltaTime;
+        }
         pos = newPos;
+    }
+    
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("PlayerShot"))
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        var explosion = Instantiate(GameManager.Instance.explosionPrefab, transform.position,
+            Quaternion.identity);
+        explosion.transform.parent = gameObject.transform;
+        Vector3 size = new Vector3(10, 10, 10);
+        explosion.transform.localScale = size;
+        explosion.GetComponent<ParticleSystem>().Play();
     }
 }

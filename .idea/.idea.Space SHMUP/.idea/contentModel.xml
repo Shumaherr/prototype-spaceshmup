@@ -6,6 +6,12 @@
     <e p="E:\Work\GameDev\Learn\3\Space SHMUP" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="FireExplosionVFX" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="FxSplash.cs" t="Include" />
+            <e p="LaunchEffect.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="BoundsCheck.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
