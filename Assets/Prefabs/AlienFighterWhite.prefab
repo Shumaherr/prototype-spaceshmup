@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd256d19e12041d39b5955c3fe7af341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounds: {x: 60, y: 40}
+  bounds: {x: 60, y: 35}
   camWidth: 0
   camHeight: 0
   camSize: {x: 0, y: 0}
