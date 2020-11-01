@@ -88,5 +88,6 @@ public class Enemy : MonoBehaviour
         Vector3 size = new Vector3(10, 10, 10);
         explosion.transform.localScale = size;
         explosion.GetComponent<ParticleSystem>().Play();
+        Destroy(explosion, explosion.GetComponent<ParticleSystem>().main.duration);
     }
 }

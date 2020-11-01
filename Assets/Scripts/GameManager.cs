@@ -12,6 +12,21 @@ public class GameManager : Singleton<GameManager>
     private Transform _player;
     private int _score;
 
+    public int Score
+    {
+        get => _score;
+        set
+        {
+            _score = value;
+            if (OnScoreChange != null)
+                OnScoreChange(_score);
+        }
+    }
+
+    public delegate void OnScoreChangeDelegate(int value);
+
+    public event OnScoreChangeDelegate OnScoreChange;
+
     public Transform Player
     {
         get => _player;
@@ -45,6 +60,6 @@ public class GameManager : Singleton<GameManager>
 
     public void AddScore(int i)
     {
-        _score += i;
+        Score += i;
     }
 }
