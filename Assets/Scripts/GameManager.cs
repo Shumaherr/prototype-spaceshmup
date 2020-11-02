@@ -11,6 +11,7 @@ public class GameManager : Singleton<GameManager>
     public GameObject explosionPrefab;
     private Transform _player;
     private int _score;
+    private int _health = 3;
 
     public int Score
     {
@@ -23,9 +24,22 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    public delegate void OnScoreChangeDelegate(int value);
+    public int Health
+    {
+        get => _health;
+        set
+        {
+            _health = value;
+            if (OnHealthChange != null)
+                OnHealthChange(_health);
+        }
+    }
 
+    public delegate void OnScoreChangeDelegate(int value);
     public event OnScoreChangeDelegate OnScoreChange;
+    
+    public delegate void OnHealthChangeDelegate(int value);
+    public event OnHealthChangeDelegate OnHealthChange;
 
     public Transform Player
     {

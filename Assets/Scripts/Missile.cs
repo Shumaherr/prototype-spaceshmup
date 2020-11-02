@@ -6,7 +6,7 @@ using UnityEngine;
 public class Missile : MonoBehaviour
 {
     [SerializeField] public float moveSpeed = 50.0f;
-    public float damage;
+    public int damage = 1;
     private bool _isPlayer;
     // Start is called before the first frame update
     void Start()
@@ -43,8 +43,9 @@ public class Missile : MonoBehaviour
         GameManager.Instance.AddScore(100);
     }
 
-    private void HitPlayer(float f)
+    private void HitPlayer(int f)
     {
         Destroy(gameObject);
+        GameManager.Instance.Health -= f;
     }
 }
