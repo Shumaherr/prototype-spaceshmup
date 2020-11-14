@@ -166,6 +166,9 @@
  <Reference Include="Unity.Deformations">
  <HintPath>E:/Work/GameDev/Learn/3/Space SHMUP/Library/ScriptAssemblies/Unity.Deformations.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>E:/Work/GameDev/Learn/3/Space SHMUP/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Properties.UI.Editor">
  <HintPath>E:/Work/GameDev/Learn/3/Space SHMUP/Library/ScriptAssemblies/Unity.Properties.UI.Editor.dll</HintPath>
  </Reference>
@@ -195,9 +198,6 @@
  </Reference>
  <Reference Include="Unity.Transforms.Hybrid">
  <HintPath>E:/Work/GameDev/Learn/3/Space SHMUP/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>E:/Work/GameDev/Learn/3/Space SHMUP/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

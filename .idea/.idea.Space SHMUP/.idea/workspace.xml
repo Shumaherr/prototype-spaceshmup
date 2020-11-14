@@ -6,38 +6,44 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space SHMUP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space SHMUP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Missile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Missile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ParallaxScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ParallaxScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/sci-fi-icon-18.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/sci-fi-icon-18.jpg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/29/29477e1d0a40c6690307bece283d0048" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2b/2b65ded89ec303ea8bdb6ee12f7f1c17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/35/35c6e4846b87debe1c30b5c0a54fc331" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3e/3e530bf9af4fd36a4f3573f539cb0b9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7f2359cbaea6d4406d0669571d8a8854" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9a/9a4824867883187a01f7440f71c5c56b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/be/be2126615d67d38cc29045665a6f6747" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c0/c0d2af6f8db51bc4e264c874a9f9ef89" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/dc/dc21c68b6fddd4b52eb2fa8d66e9996c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f5/f50c0520f1197bec0c717d7c0b7bd577" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/BurstCache/JIT/CacheManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/BurstCache/JIT/CacheManifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/08/088e4b56b567674b6e5fe7487d46e17a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0c/0c570fa451909813716a0df9c9bce191" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0d/0d4f5a865c6150cd5786333d17bdaa41" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/1a/1a15200a28a7e56d09837d3e9b4361c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/23/23feaf617a0a2b67485ecb6df876ed64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/30/304cd73d3a084f5bb63875b56f429fad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/33/335e4e1909209720c15c81e412e80832" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/34/34219478e3284e17f4328e283619f512" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6d/6d7c29c72a764685b3bbcecdf6ff1cd0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/77/7774645adde2b008f2134586ddc125d8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/78/7830ec0934bb739d23171c1a0bfb5ced" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7f53cfde5f5545b4a7742ffde3c629d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8e/8eece751cd75f04827b52d1298b70df3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/93/936c3d8fa14fa36c35e20dd26f778073" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/95b399effb15fe51075043f4d99ea79c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9f/9fc4635963937a40efb2ada5df5db749" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c3/c3abd6bab6187e867db5c8e36ed8c982" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c4/c4ef9480fcd7e37fbc3c9ef6dbd2a88f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e0/e0e95f41dbaf5a77c669cbdeaa783ab4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e1/e1073c4bf4fdc708798163e07e0b6568" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e2/e2ce60c56a81d877f7a14758e57efcb5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ee/ee37847dc5308138d9052a01c62b04f6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f3/f37234fa8505d2bc56fadacd699c1f0c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Library/PackageManager/ProjectCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/f6/f6d6b96544a97c155ae18152ad6c1a7b.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/f6/f6d6b96544a97c155ae18152ad6c1a7b.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/7c/7ce99d3e4b1ed2a15ffb9d3bf1da7ddc.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/7c/7ce99d3e4b1ed2a15ffb9d3bf1da7ddc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" beforeDir="false" afterPath="$PROJECT_DIR$/Library/UIElements/EditorWindows/UnityEditor.PackageManager.UI.PackageManagerWindow.pref" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,14 +84,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/PlayerComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/ControllerSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ParallaxScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoundsCheck.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Missile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ParallaxScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
       </list>
     </option>
   </component>
@@ -145,6 +151,9 @@
       <workItem from="1604084778790" duration="4952000" />
       <workItem from="1604192557797" duration="1424000" />
       <workItem from="1604277529985" duration="1257000" />
+      <workItem from="1604332073858" duration="6468000" />
+      <workItem from="1605310968531" duration="1710000" />
+      <workItem from="1605312696554" duration="927000" />
     </task>
     <servers />
   </component>
@@ -247,11 +256,12 @@
     </state>
     <state width="818" height="312" key="GridCell.Tab.3.right/0.30.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1604191473497" />
     <state width="1877" height="324" key="GridCell.Tab.3.right/0.30.1920.1050@0.30.1920.1050" timestamp="1600979317306" />
-    <state x="2589" y="219" key="RiderGenerateDialog" timestamp="1604278003381">
-      <screen x="1920" y="26" width="1680" height="1020" />
+    <state x="764" y="229" key="RiderGenerateDialog" timestamp="1604884014003">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="764" y="229" key="RiderGenerateDialog/0.30.1920.1050/1920.26.1680.1020@0.30.1920.1050" timestamp="1602312666881" />
-    <state x="2589" y="219" key="RiderGenerateDialog/0.30.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1604278003381" />
+    <state x="764" y="229" key="RiderGenerateDialog/0.30.1920.1050/1920.26.1680.1020@0.30.1920.1050" timestamp="1604884014003" />
+    <state x="2589" y="219" key="RiderGenerateDialog/0.30.1920.1050/1920.26.1680.1020@1920.26.1680.1020" timestamp="1604361630681" />
+    <state x="765" y="229" key="RiderGenerateDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604332406139" />
     <state x="2261" y="178" key="SettingsEditor" timestamp="1603583875611">
       <screen x="1920" y="26" width="1680" height="1020" />
     </state>

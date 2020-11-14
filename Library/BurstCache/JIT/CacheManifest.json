@@ -3,7 +3,7 @@
   "Assemblies": [
     {
       "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2020-11-02T00:12:39.8498276Z"
+      "LastWriteTime": "2020-11-14T00:07:27.7332556Z"
     },
     {
       "FullName": "netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
@@ -15,11 +15,11 @@
     },
     {
       "FullName": "Unity.Entities, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2020-11-02T00:12:56.1868259Z"
+      "LastWriteTime": "2020-11-14T00:07:40.8622977Z"
     },
     {
       "FullName": "Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2020-11-02T00:12:42.7908021Z"
+      "LastWriteTime": "2020-11-14T00:07:30.601201Z"
     },
     {
       "FullName": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -31,7 +31,7 @@
     },
     {
       "FullName": "Unity.Mathematics, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2020-11-02T00:12:41.9007635Z"
+      "LastWriteTime": "2020-11-14T00:07:29.7109891Z"
     },
     {
       "FullName": "Unity.Burst.Unsafe, Version=4.0.5.0, Culture=neutral, PublicKeyToken=null",
@@ -72,7 +72,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_AddComponentChunks(Unity.Entities.EntityComponentStore*,Unity.Entities.ArchetypeChunk*,System.Int32,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "5ce612d09571dcccb9bd214c7502b6e1",
+      "ModuleHash": "1966e50186ac90831ea4b6957cdd8cd0",
       "LinkName": "2FD5595E7AB211CE",
       "AssemblyDependencyIndices": [
         3,
@@ -91,7 +91,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_AddComponentEntitiesBatch(Unity.Entities.EntityComponentStore*,Unity.Collections.LowLevel.Unsafe.UnsafeList*,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "845bb19f0a7c951ca66ea43e70b583e1",
+      "ModuleHash": "9578a0777fad05a30ea96fba13d7196f",
       "LinkName": "62CE3BC75C2A206A",
       "AssemblyDependencyIndices": [
         3,
@@ -110,7 +110,7 @@
     {
       "FullName": "System.Boolean Unity.Entities.StructuralChange::_mono_to_burst_RemoveComponentEntity(Unity.Entities.EntityComponentStore*,Unity.Entities.Entity*,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "449ab9bbb17edd40d866c5a062cb3812",
+      "ModuleHash": "d147e680988f875fbe39dd1886459404",
       "LinkName": "BC21EC44338D1C70",
       "AssemblyDependencyIndices": [
         3,
@@ -129,7 +129,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_RemoveComponentEntitiesBatch(Unity.Entities.EntityComponentStore*,Unity.Collections.LowLevel.Unsafe.UnsafeList*,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "755bdb6e574ab1011fef34fbdb52c6fd",
+      "ModuleHash": "725ddf2afcf7b7788088ed1863fa8aca",
       "LinkName": "CD8113A41A890E46",
       "AssemblyDependencyIndices": [
         3,
@@ -148,7 +148,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_RemoveComponentChunks(Unity.Entities.EntityComponentStore*,Unity.Entities.ArchetypeChunk*,System.Int32,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "77fc454cb59f9b90d5af3b3b87e06bd8",
+      "ModuleHash": "f391a22e13b580abf4c617c5a4edabcd",
       "LinkName": "F4B1F63D1587E925",
       "AssemblyDependencyIndices": [
         3,
@@ -167,7 +167,7 @@
     {
       "FullName": "System.Boolean Unity.Entities.StructuralChange::_mono_to_burst_AddComponentEntity(Unity.Entities.EntityComponentStore*,Unity.Entities.Entity*,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "e7d43fa52ac4f9aa6dbe7a5a5359df12",
+      "ModuleHash": "6b8ec6fc7c3f7a4c06fc40320e6577d7",
       "LinkName": "7C006B897B43AB73",
       "AssemblyDependencyIndices": [
         3,
@@ -186,7 +186,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_AddSharedComponentChunks(Unity.Entities.EntityComponentStore*,Unity.Entities.ArchetypeChunk*,System.Int32,System.Int32,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "0e121b5191a9fd23d1dc55f168b5ae48",
+      "ModuleHash": "a6d0c8af11582211c51fac00d3d10f6c",
       "LinkName": "6FB1C7AF851F9598",
       "AssemblyDependencyIndices": [
         3,
@@ -205,7 +205,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_MoveEntityArchetype(Unity.Entities.EntityComponentStore*,Unity.Entities.Entity*,System.Void*)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "363a1b313d3de2977e953ff222176edf",
+      "ModuleHash": "edb93267681e57dbd7c7bdb7bd6c2907",
       "LinkName": "5FBF7809B801E642",
       "AssemblyDependencyIndices": [
         3,
@@ -224,7 +224,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_SetChunkComponent(Unity.Entities.EntityComponentStore*,Unity.Entities.ArchetypeChunk*,System.Int32,System.Void*,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "66a72778c13afd8b8fac1a1e7effd178",
+      "ModuleHash": "f481ba58ae6190d7bb127261599b9ca7",
       "LinkName": "CD0BC2372F6F0CA3",
       "AssemblyDependencyIndices": [
         3,
@@ -238,7 +238,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_CreateEntity(Unity.Entities.EntityComponentStore*,System.Void*,Unity.Entities.Entity*,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "f6f79363ecb16c1e30c17e81154bc8b0",
+      "ModuleHash": "524b2eef28d301e8234043fa5d6fb3d7",
       "LinkName": "24CFDDDB6D7CECAC",
       "AssemblyDependencyIndices": [
         3,
@@ -257,7 +257,7 @@
     {
       "FullName": "System.Void Unity.Entities.StructuralChange::_mono_to_burst_InstantiateEntities(Unity.Entities.EntityComponentStore*,Unity.Entities.Entity*,Unity.Entities.Entity*,System.Int32)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "4e673be3315cfc30b8695ca58806eccd",
+      "ModuleHash": "6d3b3bb80bbd29b661ea96b5b1de5ec6",
       "LinkName": "A560F1318C47B918",
       "AssemblyDependencyIndices": [
         3,
@@ -276,7 +276,7 @@
     {
       "FullName": "System.Boolean Unity.Entities.EntityCommandBuffer::PlaybackUnmanagedCommandExecute(Unity.Entities.EntityComponentStore*,Unity.Entities.BasicCommand*,Unity.Entities.ECBSharedPlaybackState&,Unity.Entities.PlaybackPolicy)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "1ca0fe3394292b3b750345c8f9ce8a42",
+      "ModuleHash": "2a7d701c9bc20f93134bde8a5bc7e7a0",
       "LinkName": "EB836A6B00385FD7",
       "AssemblyDependencyIndices": [
         3,
@@ -295,7 +295,7 @@
     {
       "FullName": "System.Void Unity.Entities.EntityCommandBuffer::PlaybackChainChunkWrapper(Unity.Entities.EntityDataAccess*,Unity.Collections.LowLevel.Unsafe.UnsafeList*,Unity.Entities.EntityComponentStore/ArchetypeChanges&,Unity.Entities.ECBSharedPlaybackState&,Unity.Entities.ECBChainPlaybackState*,System.Int32,System.Int32,System.Boolean,Unity.Entities.PlaybackPolicy)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "fb2f4c8cd2b35a08a175f2f3b5049033",
+      "ModuleHash": "5af32a862a5e1365cc1c3189a2225686",
       "LinkName": "6CCB0EABEDB92507",
       "AssemblyDependencyIndices": [
         3,
@@ -314,7 +314,7 @@
     {
       "FullName": "System.Int32 Unity.Entities.ChunkIterationUtility::CalculateEntityCountExecute(Unity.Entities.UnsafeMatchingArchetypePtrList&,Unity.Entities.EntityQueryFilter&)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "0ead52a8b735968b8a6adfa01e874fc8",
+      "ModuleHash": "3feaf35794fe23899ccedee612d0cfc6",
       "LinkName": "A97758B627ED3037",
       "AssemblyDependencyIndices": [
         3,
@@ -327,7 +327,7 @@
     {
       "FullName": "System.Int32 Unity.Entities.ChunkIterationUtility::CalculateChunkCountExecute(Unity.Entities.UnsafeMatchingArchetypePtrList&,Unity.Entities.EntityQueryFilter&)",
       "ModuleOptionsHash": 8794384452606821980,
-      "ModuleHash": "e988b932c555cd9d2667420fb436c299",
+      "ModuleHash": "72ee7f05d61c3a17f4c87003c06f1f56",
       "LinkName": "9FD4D34EBF439837",
       "AssemblyDependencyIndices": [
         3,

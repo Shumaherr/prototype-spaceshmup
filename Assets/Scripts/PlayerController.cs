@@ -28,6 +28,11 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine("Fire");
         }
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            GameManager.Instance.SwitchPause();
+        }
     }
 
     IEnumerator Fire()

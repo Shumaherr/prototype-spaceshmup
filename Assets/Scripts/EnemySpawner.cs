@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : Singleton<EnemySpawner>
+public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] public List<Transform> enemiesModels;
     

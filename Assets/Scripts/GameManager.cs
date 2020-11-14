@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Transforms;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -11,7 +13,33 @@ public class GameManager : Singleton<GameManager>
     public GameObject explosionPrefab;
     private Transform _player;
     private int _score;
+    private int _level = 1;
     private int _health = 3;
+    private bool _isPaused = false;
+    private float distance;
+
+    public float Distance
+    {
+        get => distance;
+        set => distance = value;
+    }
+
+    public int Level 
+    {
+        get => _level;
+        set
+        {
+            _level = value;
+            if (OnLevelChange != null)
+                OnLevelChange(_level);
+        }
+    }
+
+    public bool IsPaused
+    {
+        get => _isPaused;
+        set => _isPaused = value;
+    }
 
     public int Score
     {
@@ -30,10 +58,16 @@ public class GameManager : Singleton<GameManager>
         set
         {
             _health = value;
+            if (_health <= 0)
+                OnDeath();
             if (OnHealthChange != null)
                 OnHealthChange(_health);
         }
     }
+
+    public delegate void OnDeathDelegate();
+
+    public event OnDeathDelegate OnDeath;
 
     public delegate void OnScoreChangeDelegate(int value);
     public event OnScoreChangeDelegate OnScoreChange;
@@ -41,6 +75,8 @@ public class GameManager : Singleton<GameManager>
     public delegate void OnHealthChangeDelegate(int value);
     public event OnHealthChangeDelegate OnHealthChange;
 
+    public delegate void OnLevelChangeDelegate(int value);
+    public event OnLevelChangeDelegate OnLevelChange;
     public Transform Player
     {
         get => _player;
@@ -51,9 +87,23 @@ public class GameManager : Singleton<GameManager>
     void Start()
     {
         DontDestroyOnLoad(this);
+        OnDeath += GameOver;
+        Level = 1;
+        Score = 0;
+    }
+
+    private void GameOver()
+    {
+        SwitchPause();
         
     }
 
+    public void RestartGame()
+    {
+        Health = 3;
+        SceneManager.LoadScene("Game");
+        SwitchPause();
+    }
     private void Awake()
     {
         SpawnPlayer();
@@ -75,5 +125,19 @@ public class GameManager : Singleton<GameManager>
     public void AddScore(int i)
     {
         Score += i;
+    }
+
+    public void SwitchPause()
+    {
+        _isPaused = !_isPaused;
+        if (_isPaused)
+        {
+            Time.timeScale = 0;
+            return;
+        }
+
+        Time.timeScale = 1;
+
+
     }
 }

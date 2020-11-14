@@ -19,6 +19,7 @@ public class ParallaxScript : MonoBehaviour {
         if(isMoving)
         {
             Vector3 position = transform.position;
+            GameManager.Instance.Distance += startSpeed * Time.deltaTime;
             float newPosY = (position.y - (Time.deltaTime * startSpeed)) >= -122.0f
                 ? position.y - (Time.deltaTime * startSpeed)
                 : _startPosY;
