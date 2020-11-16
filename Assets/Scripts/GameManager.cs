@@ -86,7 +86,7 @@ public class GameManager : Singleton<GameManager>
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         OnDeath += GameOver;
         Level = 1;
         Score = 0;
@@ -100,10 +100,22 @@ public class GameManager : Singleton<GameManager>
 
     public void RestartGame()
     {
-        Health = 3;
-        SceneManager.LoadScene("Game");
+        
+        ClearScene();
+        //Player = Instantiate(PlayerPrefab, StartPosition, Quaternion.Euler(0,180,0));
         SwitchPause();
+        SceneManager.LoadScene("Game");
     }
+
+    private void ClearScene()
+    {
+        foreach (var gameObject in FindObjectsOfType<GameObject>())
+        {
+            if(gameObject != this.gameObject)
+                Destroy(gameObject);
+        }
+    }
+
     private void Awake()
     {
         SpawnPlayer();
@@ -137,7 +149,6 @@ public class GameManager : Singleton<GameManager>
         }
 
         Time.timeScale = 1;
-
-
+        
     }
 }

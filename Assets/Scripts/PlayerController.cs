@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
             explosion.transform.localScale = size;
                 explosion.GetComponent<ParticleSystem>().Play();
             Destroy(other.gameObject);
+            Destroy(explosion, explosion.GetComponent<ParticleSystem>().duration);
         }
     }
 }
