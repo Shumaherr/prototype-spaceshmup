@@ -21,7 +21,11 @@ public class GameManager : Singleton<GameManager>
     public float Distance
     {
         get => distance;
-        set => distance = value;
+        set
+        {
+            distance = value;
+            Score += (int) distance / 5;
+        }
     }
 
     public int Level 
@@ -126,12 +130,6 @@ public class GameManager : Singleton<GameManager>
         if(_player)
             return;
         _player = Instantiate(PlayerPrefab, StartPosition, Quaternion.Euler(0,180,0));
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void AddScore(int i)

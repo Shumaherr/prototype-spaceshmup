@@ -204,6 +204,7 @@ MonoBehaviour:
   fireRate: 1
   missilePrefab: {fileID: 1314043251266546, guid: a30ef2e5b0c4a2f4f894c4ff7f998e13,
     type: 3}
+  laserMat: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &168626972818281179
 GameObject:
   m_ObjectHideFlags: 0
