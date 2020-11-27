@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\BoundsCheck.cs" />
+     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\Singletone.cs" />
      <Compile Include="Assets\Scripts\ParallaxScript.cs" />
      <Compile Include="Assets\FireExplosionVFX\Scripts\FxSplash.cs" />

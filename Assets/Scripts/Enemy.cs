@@ -75,9 +75,23 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerShot"))
         {
-            Destroy(other.gameObject);
+            HitEnemy(other.gameObject.name);
+        }
+    }
+
+    private void HitEnemy(string gameObjectName)
+    {
+        if (gameObjectName.Contains("Laser"))
+        {
+            //TODO Implement damage in time
             Destroy(gameObject);
         }
+        if (gameObjectName.Contains("Missile"))
+        {
+            //TODO Implement constant damage
+            Destroy(gameObject);
+        }
+        
     }
 
     private void OnDestroy()

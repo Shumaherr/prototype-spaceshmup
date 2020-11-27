@@ -39,6 +39,7 @@ public class Missile : MonoBehaviour
 
     private void HitEnemy(Collision other)
     {
+        Destroy(gameObject);
         Destroy(other.gameObject);
         GameManager.Instance.AddScore(100);
     }
