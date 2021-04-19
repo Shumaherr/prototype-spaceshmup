@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class ParallaxScript : MonoBehaviour {
     private float startPos, length;
@@ -12,7 +13,13 @@ public class ParallaxScript : MonoBehaviour {
     void Start()
     {
         InvokeRepeating("AddDistance", 0,1 );
+        InvokeRepeating("IncreaseSpeed", 10, 10);
         _startPosY = transform.position.y;
+    }
+
+    private void IncreaseSpeed()
+    {
+        startSpeed += 5;
     }
 
     private void AddDistance()

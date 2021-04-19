@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI levelText;
     public GameObject gameOverPopup;
+    public TextMeshProUGUI weaponText;
     
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,15 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.OnScoreChange += ChangeScore;
         GameManager.Instance.OnLevelChange += ChangeLevel;
         GameManager.Instance.OnHealthChange += ChangeHealth;
+        GameManager.Instance.OnWeaponChange += ChangeWeapon;
         GameManager.Instance.OnDeath += ShowDialog;
         healthIcon.sprite = healthIcons[healthIcons.Capacity - 1];
         gameOverPopup.SetActive(false);
+    }
+
+    private void ChangeWeapon(Weapons _weapon)
+    {
+        weaponText.SetText(_weapon.ToString());
     }
 
     private void ShowDialog()

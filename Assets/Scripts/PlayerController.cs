@@ -8,11 +8,6 @@ using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.Serialization;
 
-enum Weapons
-{
-    Missile,
-    Laser
-}
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,17 +16,12 @@ public class PlayerController : MonoBehaviour
     public GameObject missilePrefab;
     public Material laserMat;
     private bool _cooldown = false;
-    private List<Weapons> _availableWeapons;
-    private Weapons currentWeapon;
     private Transform _laser;
     private GameObject _laserInstance;
 
     private void Start()
     {
-        _availableWeapons = new List<Weapons>();
-        _availableWeapons.Add(Weapons.Missile);
-        _availableWeapons.Add(Weapons.Laser);
-        currentWeapon = Weapons.Laser;
+       
     }
 
     private void Update()
@@ -56,7 +46,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && !_cooldown)
         {
-            switch (currentWeapon)
+            switch (GameManager.Instance.CurrentWeapon)
             {
                 case Weapons.Missile:
                     StartCoroutine("Fire");
@@ -72,7 +62,7 @@ public class PlayerController : MonoBehaviour
         {
             SwitchWeapon();
         }
-        if (Input.GetButtonUp("Fire1") && currentWeapon == Weapons.Laser)
+        if (Input.GetButtonUp("Fire1") && GameManager.Instance.CurrentWeapon == Weapons.Laser)
         {
             _cooldown = false;
             DeactivateLaser();
@@ -87,8 +77,9 @@ public class PlayerController : MonoBehaviour
 
     private void SwitchWeapon()
     {
-        int index = _availableWeapons.IndexOf(currentWeapon);
-        currentWeapon = index == _availableWeapons.Count - 1 ? _availableWeapons[0] : _availableWeapons[index + 1];
+        int index = GameManager.Instance.availableWeapons.IndexOf(GameManager.Instance.CurrentWeapon);
+        GameManager.Instance.CurrentWeapon = index == GameManager.Instance.availableWeapons.Count - 1 ? 
+            GameManager.Instance.availableWeapons[0] : GameManager.Instance.availableWeapons[index + 1];
     }
 
     private void DeactivateLaser()

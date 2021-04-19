@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   fireRate: 1
-  health: 10
+  health: 1
   scoreRevard: 100
   missile: {fileID: 4029445680763570, guid: 79eac1308df01c1459d5833c9cb6055c, type: 3}
 --- !u!54 &6792863347930765288

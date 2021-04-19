@@ -1179,6 +1179,7 @@ MonoBehaviour:
   scoreText: {fileID: 488415522}
   levelText: {fileID: 1456533858}
   gameOverPopup: {fileID: 1440882060}
+  weaponText: {fileID: 1464788252}
 --- !u!850595691 &1127235307
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1603,14 +1604,14 @@ RectTransform:
   m_GameObject: {fileID: 1464788250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.42710277, y: 0.42710277, z: 0.42710277}
+  m_LocalScale: {x: 0.6680154, y: 0.42710277, z: 0.42710277}
   m_Children: []
   m_Father: {fileID: 995965795}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 78.5, y: -297.2}
+  m_AnchoredPosition: {x: 57.8, y: -293.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464788252
@@ -1660,8 +1661,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1696,7 +1697,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 85.0534, y: 0, z: -75.6031, w: 2.6874256}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1934,6 +1935,7 @@ MonoBehaviour:
     type: 3}
   StartPosition: {x: 0, y: -34}
   explosionPrefab: {fileID: 167558, guid: a11dc34cafe3dfd4facb59cfb4e72de8, type: 3}
+  availableWeapons: 
 --- !u!4 &1983702165
 Transform:
   m_ObjectHideFlags: 0

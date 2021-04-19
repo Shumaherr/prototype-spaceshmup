@@ -39,9 +39,10 @@ public class Missile : MonoBehaviour
 
     private void HitEnemy(Collision other)
     {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        Enemy enemy = other.gameObject.GetComponent<Enemy>();
+        enemy.Health -= damage;
         GameManager.Instance.AddScore(100);
+        Destroy(gameObject);
     }
 
     private void HitPlayer(int f)

@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Transforms;
-using UnityEditor;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+public enum Weapons
+{
+    Missile,
+    Laser
+}
 
 public class GameManager : Singleton<GameManager>
 {
@@ -17,6 +19,19 @@ public class GameManager : Singleton<GameManager>
     private int _health = 3;
     private bool _isPaused = false;
     private float distance;
+    public List<Weapons> availableWeapons;
+    private Weapons _currentWeapon;
+
+    public Weapons CurrentWeapon
+    {
+        get => _currentWeapon;
+        set
+        {
+            _currentWeapon = value;
+            if (OnWeaponChange != null)
+                OnWeaponChange(_currentWeapon);
+        } 
+    }
 
     public float Distance
     {
@@ -72,6 +87,10 @@ public class GameManager : Singleton<GameManager>
     public delegate void OnDeathDelegate();
 
     public event OnDeathDelegate OnDeath;
+    
+    public delegate void OnWeaponChangeDelegate(Weapons _weapon);
+
+    public event OnWeaponChangeDelegate OnWeaponChange;
 
     public delegate void OnScoreChangeDelegate(int value);
     public event OnScoreChangeDelegate OnScoreChange;
@@ -94,6 +113,10 @@ public class GameManager : Singleton<GameManager>
         OnDeath += GameOver;
         Level = 1;
         Score = 0;
+        availableWeapons = new List<Weapons>();
+        availableWeapons.Add(Weapons.Missile);
+        availableWeapons.Add(Weapons.Laser);
+        CurrentWeapon = Weapons.Laser;
     }
 
     private void GameOver()

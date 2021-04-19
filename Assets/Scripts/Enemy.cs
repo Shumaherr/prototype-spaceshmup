@@ -10,7 +10,27 @@ public class Enemy : MonoBehaviour
 {
     public float speed = 10f; //Move speed
     public float fireRate = 3.5f; //Attack speed
-    public float health = 10; //Health points
+    public float health = 1; //Health points
+
+    public float Health
+    {
+        get => health;
+        set
+        {
+            health = value;
+            OnEnemyHealthChange(value);
+        }
+    }
+
+    private void OnEnemyHealthChange(float value)
+    {
+        if (health - value <= 0)
+        {
+            health = 0;
+            Destroy(this.gameObject);
+        }
+    }
+
     public int scoreRevard = 100; //Score for destroy
     public Transform missile; //Missle to shoot
     private bool _cooldown;
@@ -67,9 +87,10 @@ public class Enemy : MonoBehaviour
                 newPos.x -= speed * deltaTime;
             newPos.y -= speed * deltaTime;
         }
+
         pos = newPos;
     }
-    
+
 
     private void OnCollisionEnter(Collision other)
     {
@@ -86,12 +107,12 @@ public class Enemy : MonoBehaviour
             //TODO Implement damage in time
             Destroy(gameObject);
         }
+
         if (gameObjectName.Contains("Missile"))
         {
             //TODO Implement constant damage
             Destroy(gameObject);
         }
-        
     }
 
     private void OnDestroy()
